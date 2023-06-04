@@ -1,2 +1,2 @@
 # Small-Projects
-Silly side stuff
+Small projects to just play around with
