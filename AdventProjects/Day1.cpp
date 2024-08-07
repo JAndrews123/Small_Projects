@@ -13,9 +13,9 @@ int main(){
     vector<string> fileWords;
     string word;
     int lines = 0;
-    int numsToAdd;
+    int numsToAdd = 0;
     int totalAmount = 0;
-    vector<int> numPerWord;
+    int current = 0;
 
     Data.open("Day1Data.txt", ios::in);
     while(getline(Data, word)){
@@ -24,24 +24,22 @@ int main(){
     }
     Data.close();
 
-    for(int i = 0; i < lines; i++){
-        word = fileWords[i];
-        for(int j = 0; j < word.size(); j++){
-            if(word[j] < 58 && word[j] > 47){
-                numPerWord.push_back((int) word[j] - ASCII_TO_DEC);
+    while(lines > 0){
+        word = fileWords[lines];
+
+        for (int i = 0; i < word.size(); i++){
+            
+            if (word[i] isnumber){
+                
+                if (current = 0){
+                    numsToAdd = word[i] * 10;
+                }
+                current = word[i] */needs to be converted to binary num/*;
             }
         }
-        for(int j = 0; j < numPerWord.size(); j++){
-            if(j == 0 && numPerWord.size() > 1){
-                numsToAdd = numPerWord[j]*10;
-            } else if (j == 0){
-                numsToAdd = numPerWord[j];
-            } else if (j == numPerWord.size()-1){
-                numsToAdd += numPerWord[j];
-            }
-        }
-        totalAmount += numsToAdd;
-        numPerWord.clear();
+        totalAmount += (numsToAdd + current);
+        current = 0;
+    }
         cout << totalAmount << endl;
     }
 }
