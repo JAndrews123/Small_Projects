@@ -21,13 +21,20 @@
     <ClCompile Include="AdventofCode2024.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Day_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day_1_input.txt" />
+    <Text Include="Day_2_input.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Day_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Day_1.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

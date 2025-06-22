@@ -129,12 +129,15 @@
   <ItemGroup>
     <ClCompile Include="AdventofCode2024.cpp" />
     <ClCompile Include="Day_1.cpp" />
+    <ClCompile Include="Day_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Day_1_input.txt" />
+    <Text Include="Day_2_input.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Day_1.h" />
+    <ClInclude Include="Day_2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

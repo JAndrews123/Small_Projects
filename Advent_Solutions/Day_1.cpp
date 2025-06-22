@@ -26,7 +26,6 @@ void Day_1::compute()
 
 void Day_1::loadData(vector<int>& right, vector<int>& left)
 {
-    string line;
     int num1, num2;
     fstream input("Day_1_input.txt");
 
