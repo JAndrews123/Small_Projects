@@ -1,22 +1,20 @@
 // DumbTest.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
-#include <stdio.h>
-#include <vector>
-#include <fstream>
-#include <string>
+#include "Day_1.h"
 
-using namespace std;
+Day_1::Day_1() {
+    //do nothing
+}
 
-void loadData(vector<int>& right, vector<int>& left);
-void sortData(vector<int>& Data);
-int findTotalDiff(vector<int> right, vector<int> left);
+Day_1::~Day_1() {
+    //do nothing
+}
 
 
-int main()
+void Day_1::compute()
 {
-    vector<int> right, left;
+
     loadData(right, left);
     sortData(right);
     sortData(left);
@@ -26,7 +24,7 @@ int main()
     cout << value;
 }
 
-void loadData(vector<int>& right, vector<int>& left)
+void Day_1::loadData(vector<int>& right, vector<int>& left)
 {
     string line;
     int num1, num2;
@@ -38,7 +36,7 @@ void loadData(vector<int>& right, vector<int>& left)
     }
 }
 
-void sortData(vector<int>& Data)
+void Day_1::sortData(vector<int>& Data)
 {
     int newSwap = 1;
     int oldSwap = 0;
@@ -60,7 +58,7 @@ void sortData(vector<int>& Data)
     }
 }
 
-int findTotalDiff(vector<int> right, vector<int> left)
+int Day_1::findTotalDiff(vector<int> right, vector<int> left)
 {
     int total = 0;
     for(int i = 0; i < right.size(); i++)
